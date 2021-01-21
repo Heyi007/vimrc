@@ -1,14 +1,7 @@
 set nu
 set ruler
-set tabstop=2 shiftwidth=2 expandtab
-set colorcolumn=80
-
-" Enable spell checking
-set spell
-
-" Spell checking languages
-set spelllang=en
-
+set tabstop=4 shiftwidth=4 expandtab
+set hlsearch
 " pathogen
 execute pathogen#infect()
 syntax on
@@ -18,11 +11,12 @@ filetype plugin indent on
 let g:solarized_termcolors=256
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme default
 
 " nerd tree
 "autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
 
 " air-line
 set laststatus=2
