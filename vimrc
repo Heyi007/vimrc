@@ -7,6 +7,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+if exists('$TMUX')
+set term=screen-256color
+endif
+
 " https://github.com/altercation/vim-colors-solarized
 let g:solarized_termcolors=256
 syntax enable
